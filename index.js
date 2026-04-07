@@ -3,6 +3,7 @@
  */
 function changeHeadingText() {
   // TODO: Implement this function
+  document.getElementById("main-heading").textContent = "DOM Manipulation Challenge";
 }
 
 /**
@@ -10,6 +11,7 @@ function changeHeadingText() {
  */
 function changeBoxColor() {
   // TODO: Implement this function
+  document.getElementById("box-to-modify").style.backgroundColor = "lightblue";
 }
 
 /**
@@ -17,6 +19,9 @@ function changeBoxColor() {
  */
 function addNewItem() {
   // TODO: Implement this function
+  const li = document.createElement("li");
+  li.textContent = "New Item";
+  document.getElementById("item-list").appendChild(li);
 }
 
 /**
@@ -24,6 +29,7 @@ function addNewItem() {
  */
 function highlightParagraph() {
   // TODO: Implement this function
+  document.querySelector(".content-para").classList.add("highlight");
 }
 
 /**
@@ -31,6 +37,7 @@ function highlightParagraph() {
  */
 function removeElement() {
   // TODO: Implement this function
+  document.getElementById("to-be-removed").remove();
 }
 
 
